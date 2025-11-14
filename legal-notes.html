@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Notes | STRAIN S.r.l.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .legal-page {
+            min-height: 100vh;
+            padding-top: 120px;
+            padding-bottom: 80px;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .legal-header h1 {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .legal-header .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .legal-content {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+        }
+
+        .legal-content h2 {
+            color: var(--accent-blue);
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.75rem;
+        }
+
+        .legal-content h3 {
+            color: var(--primary-green);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.25rem;
+        }
+
+        .legal-content p {
+            margin-bottom: var(--spacing-md);
+            line-height: 1.8;
+        }
+
+        .legal-content ul, .legal-content ol {
+            margin-left: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .legal-content li {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .company-info-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-blue);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            border-radius: var(--radius-sm);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-blue);
+            margin-bottom: var(--spacing-md);
+            transition: all var(--transition-fast);
+        }
+
+        .back-link:hover {
+            gap: 1rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 111, 0, 0.1);
+            border-left: 4px solid var(--accent-orange);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            border-radius: var(--radius-sm);
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="20" class="logo-circle"/>
+                    <path d="M15,25 L25,15 L35,25 L25,35 Z" class="logo-diamond"/>
+                </svg>
+                <span>STRAIN</span>
+            </a>
+
+            <div class="nav-controls">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="legal-page">
+        <div class="legal-container">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+
+            <div class="legal-header">
+                <h1>Legal Notes</h1>
+                <p class="last-updated">Last Updated: November 2024</p>
+            </div>
+
+            <div class="legal-content">
+                <h2>1. Company Information</h2>
+
+                <div class="warning-box">
+                    <p><strong>Important Notice:</strong> STRAIN S.r.l. is currently in the incorporation process as a spin-off of the University of Rome Tor Vergata.</p>
+                </div>
+
+                <div class="company-info-box">
+                    <p><strong>Company Name:</strong> STRAIN S.r.l.</p>
+                    <p><strong>Status:</strong> Company in incorporation / Società in fase di costituzione</p>
+                    <p><strong>Spin-off of:</strong> Università degli Studi di Roma "Tor Vergata"</p>
+                    <p><strong>Headquarters:</strong> Roma, Italia</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@strain.it">info@strain.it</a></p>
+                    <p><strong>PEC:</strong> <a href="mailto:pec@strain.it">pec@strain.it</a></p>
+                </div>
+
+                <p><em>Additional company details including VAT number, registration number, and registered office address will be updated upon completion of the incorporation process.</em></p>
+
+                <h2>2. Website Ownership and Management</h2>
+                <p>
+                    This website is owned and operated by STRAIN S.r.l. The content, design, and structure of this website are protected by intellectual property rights and are the exclusive property of STRAIN S.r.l., unless otherwise indicated.
+                </p>
+
+                <h2>3. Copyright and Intellectual Property</h2>
+                <p>
+                    All content on this website, including but not limited to text, graphics, logos, images, audio clips, digital downloads, data compilations, and software, is the property of STRAIN S.r.l. or its content suppliers and is protected by Italian and international copyright laws.
+                </p>
+
+                <h3>3.1 Permitted Use</h3>
+                <p>You may:</p>
+                <ul>
+                    <li>View and print pages from the website for personal, non-commercial use</li>
+                    <li>Share links to our website content via social media</li>
+                    <li>Reference our research and publications with proper attribution</li>
+                </ul>
+
+                <h3>3.2 Prohibited Use</h3>
+                <p>Without prior written permission, you may not:</p>
+                <ul>
+                    <li>Reproduce, duplicate, copy, or resell any part of our website</li>
+                    <li>Use any content for commercial purposes</li>
+                    <li>Modify or adapt any materials from the website</li>
+                    <li>Use our trademarks, logos, or branding without authorization</li>
+                </ul>
+
+                <h2>4. Trademarks</h2>
+                <p>
+                    "STRAIN" and associated logos are trademarks of STRAIN S.r.l. All other trademarks, service marks, and trade names referenced on this website are the property of their respective owners.
+                </p>
+
+                <h2>5. Website Content and Information</h2>
+
+                <h3>5.1 Accuracy of Information</h3>
+                <p>
+                    While we strive to ensure that the information on this website is accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information.
+                </p>
+
+                <h3>5.2 Technical Information</h3>
+                <p>
+                    Technical specifications, research data, and performance metrics presented on this website are provided for informational purposes. Actual results may vary based on specific applications and conditions.
+                </p>
+
+                <h2>6. Limitation of Liability</h2>
+                <p>
+                    STRAIN S.r.l. shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from:
+                </p>
+                <ul>
+                    <li>Your use or inability to use this website</li>
+                    <li>Any errors or omissions in the content</li>
+                    <li>Any unauthorized access to or use of our servers</li>
+                    <li>Any interruption or cessation of transmission to or from the website</li>
+                    <li>Any bugs, viruses, or other harmful components transmitted through the website</li>
+                </ul>
+
+                <h2>7. External Links Disclaimer</h2>
+                <p>
+                    This website may contain links to external websites that are not provided or maintained by STRAIN S.r.l. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+                </p>
+
+                <h2>8. Research and Publications</h2>
+                <p>
+                    Information about research projects, publications, and technical developments is provided for general information purposes. Any research collaboration or partnership opportunities should be discussed through official channels by contacting us directly.
+                </p>
+
+                <h2>9. University Affiliation</h2>
+                <p>
+                    STRAIN S.r.l. is a spin-off company of the University of Rome Tor Vergata. This relationship is based on technology transfer and research collaboration. References to the University are made with proper authorization and in accordance with university policies.
+                </p>
+
+                <h2>10. Data Protection and Privacy</h2>
+                <p>
+                    Our handling of personal data is governed by our <a href="privacy-policy.html">Privacy Policy</a>, which complies with the General Data Protection Regulation (GDPR) and Italian data protection legislation.
+                </p>
+
+                <h2>11. Professional Services Disclaimer</h2>
+                <p>
+                    Information provided on this website does not constitute professional advice. Any decisions made based on information from this website are at your own risk. For specific technical or business advice, please contact us directly to discuss your requirements.
+                </p>
+
+                <h2>12. Changes to Website Content</h2>
+                <p>
+                    STRAIN S.r.l. reserves the right to modify, update, or remove any content on this website at any time without prior notice. We are not obligated to update information or maintain the website indefinitely.
+                </p>
+
+                <h2>13. Governing Law and Jurisdiction</h2>
+                <p>
+                    These legal notes and any disputes arising from or related to the use of this website shall be governed by and construed in accordance with the laws of Italy. The courts of Rome, Italy, shall have exclusive jurisdiction over any disputes.
+                </p>
+
+                <h2>14. Severability</h2>
+                <p>
+                    If any provision of these legal notes is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+                </p>
+
+                <h2>15. Contact for Legal Matters</h2>
+                <div class="company-info-box">
+                    <p><strong>For legal inquiries:</strong></p>
+                    <p>Email: <a href="mailto:legal@strain.it">legal@strain.it</a></p>
+                    <p>PEC: <a href="mailto:pec@strain.it">pec@strain.it</a></p>
+                    <p>Address: Roma, Italia</p>
+                </div>
+
+                <h2>16. Intellectual Property Infringement</h2>
+                <p>
+                    If you believe that any content on this website infringes your intellectual property rights, please contact us immediately with:
+                </p>
+                <ul>
+                    <li>A description of the copyrighted work or intellectual property</li>
+                    <li>The location on the website where the material appears</li>
+                    <li>Your contact information</li>
+                    <li>A statement of good faith belief that the use is not authorized</li>
+                    <li>A statement of accuracy under penalty of perjury</li>
+                </ul>
+
+                <h2>17. Force Majeure</h2>
+                <p>
+                    STRAIN S.r.l. shall not be liable for any failure to perform its obligations where such failure is as a result of acts of nature, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation, facilities, fuel, energy, labor, or materials.
+                </p>
+
+                <h2>18. Language</h2>
+                <p>
+                    This website is available in English and Italian. In case of any discrepancy between language versions, the Italian version shall prevail for legal interpretation purposes, as Italy is the jurisdiction of incorporation.
+                </p>
+
+                <h2>19. Acceptance of Terms</h2>
+                <p>
+                    By using this website, you acknowledge that you have read, understood, and agree to be bound by these legal notes. If you do not agree with any part of these terms, please discontinue use of the website.
+                </p>
+
+                <div class="warning-box">
+                    <p><strong>Note:</strong> These legal notes will be updated with complete company registration details upon completion of the incorporation process.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 STRAIN S.r.l. | All rights reserved | <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STRAIN S.r.l. - Advanced Materials for Space & Sustainability. Shape Memory Polymers, Sustainable Recycling, Space Mechanisms.">
+    <meta name="keywords" content="aerospace, materials science, shape memory polymers, sustainable recycling, composites, space technology">
+    <meta name="author" content="STRAIN S.r.l.">
+
+    <title>STRAIN S.r.l. | Advanced Materials for Aerospace & Sustainability</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body data-theme="dark">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="logo" data-en="STRAIN" data-it="STRAIN">
+                <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="20" class="logo-circle"/>
+                    <path d="M15,25 L25,15 L35,25 L25,35 Z" class="logo-diamond"/>
+                </svg>
+                <span>STRAIN</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-it="Home">Home</a></li>
+                <li><a href="#mission" class="nav-link" data-en="Mission" data-it="Mission">Mission</a></li>
+                <li><a href="#technologies" class="nav-link" data-en="Technologies" data-it="Tecnologie">Technologies</a></li>
+                <li><a href="#services" class="nav-link" data-en="Services" data-it="Servizi">Services</a></li>
+                <li><a href="#team" class="nav-link" data-en="Team" data-it="Team">Team</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-it="Contatti">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <!-- Language Switcher -->
+                <button class="lang-switch" id="langSwitch" aria-label="Switch Language">
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option active" data-lang="it">IT</span>
+                </button>
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <canvas class="three-bg" id="threeBg"></canvas>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <h1 class="hero-title">
+                    <span class="hero-title-line" data-en="Advanced Materials for" data-it="Materiali Avanzati per">Advanced Materials for</span>
+                    <span class="hero-title-line gradient-text" data-en="Space & Sustainability" data-it="Spazio e Sostenibilità">Space & Sustainability</span>
+                </h1>
+
+                <p class="hero-subtitle" data-en="Shape Memory Polymers | Sustainable Recycling | Space Mechanisms" data-it="Polimeri a Memoria di Forma | Riciclo Sostenibile | Meccanismi Spaziali">
+                    Shape Memory Polymers | Sustainable Recycling | Space Mechanisms
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#technologies" class="btn btn-primary" data-en="Discover Our Technologies" data-it="Scopri le Tecnologie">
+                        <span>Discover Our Technologies</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Contact Us" data-it="Contattaci">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <span data-en="Scroll to explore" data-it="Scorri per esplorare">Scroll to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission section" id="mission">
+            <div class="container">
+                <h2 class="section-title" data-en="Our Mission" data-it="La Nostra Mission">Our Mission</h2>
+
+                <div class="bento-grid">
+                    <!-- Card 1 - Innovation -->
+                    <div class="bento-card card-large" data-aos="fade-up">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" class="icon-rocket">
+                                <path d="M32 8 L40 16 L48 24 L40 32 L32 40 L24 32 L16 24 L24 16 Z" fill="var(--accent-blue)"/>
+                                <circle cx="32" cy="24" r="4" fill="var(--primary-green)"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Innovation" data-it="Innovazione">Innovation</h3>
+                        <p data-en="Pushing the boundaries of material science through cutting-edge research in Shape Memory Polymer Composites (SMPC) for next-generation space mechanisms."
+                           data-it="Superare i confini della scienza dei materiali attraverso ricerca all'avanguardia in Compositi Polimerici a Memoria di Forma (SMPC) per meccanismi spaziali di nuova generazione.">
+                            Pushing the boundaries of material science through cutting-edge research in Shape Memory Polymer Composites (SMPC) for next-generation space mechanisms.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="10000">0</span><span>+</span>
+                                <span class="stat-label" data-en="Actuation Cycles" data-it="Cicli di Attuazione">Actuation Cycles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="150">0</span><span>°C</span>
+                                <span class="stat-label" data-en="Max Temperature" data-it="Temperatura Max">Max Temperature</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Sustainability -->
+                    <div class="bento-card card-medium" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" class="icon-recycle">
+                                <path d="M32 12 L28 20 L20 24 L20 32 L28 36 L32 44 L36 36 L44 32 L44 24 L36 20 Z" stroke="var(--primary-green)" stroke-width="2" fill="none"/>
+                                <circle cx="32" cy="32" r="8" fill="var(--primary-green)"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Sustainability" data-it="Sostenibilità">Sustainability</h3>
+                        <p data-en="Pioneering sustainable solutions for composite and PCB recycling, transforming aerospace waste into valuable resources for a circular economy."
+                           data-it="Soluzioni sostenibili pionieristiche per il riciclo di compositi e PCB, trasformando rifiuti aerospaziali in risorse preziose per un'economia circolare.">
+                            Pioneering sustainable solutions for composite and PCB recycling, transforming aerospace waste into valuable resources for a circular economy.
+                        </p>
+                        <div class="progress-bar">
+                            <div class="progress-label">
+                                <span data-en="Material Recovery" data-it="Recupero Materiali">Material Recovery</span>
+                                <span class="progress-value">95%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Tech Transfer -->
+                    <div class="bento-card card-medium" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 64 64" class="icon-university">
+                                <rect x="16" y="28" width="32" height="24" stroke="var(--accent-orange)" stroke-width="2" fill="none"/>
+                                <path d="M8 24 L32 12 L56 24" stroke="var(--accent-orange)" stroke-width="2" fill="none"/>
+                                <line x1="32" y1="12" x2="32" y2="28" stroke="var(--accent-orange)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Tech Transfer" data-it="Trasferimento Tecnologico">Tech Transfer</h3>
+                        <p data-en="University of Rome Tor Vergata spin-off bridging academic excellence with industrial innovation through strategic partnerships and collaborative research."
+                           data-it="Spin-off dell'Università di Roma Tor Vergata che collega l'eccellenza accademica con l'innovazione industriale attraverso partnership strategiche e ricerca collaborativa.">
+                            University of Rome Tor Vergata spin-off bridging academic excellence with industrial innovation through strategic partnerships and collaborative research.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="technologies section" id="technologies">
+            <div class="container-fluid">
+                <h2 class="section-title" data-en="Our Technologies" data-it="Le Nostre Tecnologie">Our Technologies</h2>
+
+                <!-- Tech 1 - SMPC -->
+                <div class="tech-row" data-aos="fade-right">
+                    <div class="tech-visual">
+                        <div class="tech-placeholder">
+                            <svg viewBox="0 0 400 400" class="tech-illustration">
+                                <defs>
+                                    <linearGradient id="smpcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:var(--accent-blue);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:var(--primary-green);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="200" cy="200" r="150" fill="url(#smpcGrad)" opacity="0.2"/>
+                                <path d="M200 80 L280 200 L200 320 L120 200 Z" stroke="url(#smpcGrad)" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tech-content">
+                        <span class="tech-label">01</span>
+                        <h3 class="tech-title" data-en="Shape Memory Polymer Composites" data-it="Compositi Polimerici a Memoria di Forma">Shape Memory Polymer Composites</h3>
+                        <h4 class="tech-subtitle" data-en="Intelligent Space Mechanisms" data-it="Meccanismi Spaziali Intelligenti">Intelligent Space Mechanisms</h4>
+                        <p class="tech-description"
+                           data-en="Revolutionary SMPC technology enabling deployable structures, solar panel hinges, and adaptive mechanisms for satellites. Our hinge-HDRM system provides reliable actuation in extreme space environments."
+                           data-it="Tecnologia SMPC rivoluzionaria che abilita strutture dispiegabili, cerniere per pannelli solari e meccanismi adattivi per satelliti. Il nostro sistema hinge-HDRM fornisce azionamento affidabile in ambienti spaziali estremi.">
+                            Revolutionary SMPC technology enabling deployable structures, solar panel hinges, and adaptive mechanisms for satellites. Our hinge-HDRM system provides reliable actuation in extreme space environments.
+                        </p>
+                        <ul class="tech-features">
+                            <li data-en="Lightweight deployment systems" data-it="Sistemi di dispiegamento ultraleggeri">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Lightweight deployment systems</span>
+                            </li>
+                            <li data-en="Temperature-responsive actuation" data-it="Attuazione termo-responsiva">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Temperature-responsive actuation</span>
+                            </li>
+                            <li data-en="Low power consumption" data-it="Basso consumo energetico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Low power consumption</span>
+                            </li>
+                            <li data-en="Radiation-resistant formulations" data-it="Formulazioni resistenti alle radiazioni">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Radiation-resistant formulations</span>
+                            </li>
+                        </ul>
+                        <div class="tech-specs">
+                            <div class="spec-item">
+                                <span class="spec-value">-150°C to +150°C</span>
+                                <span class="spec-label" data-en="Operating Range" data-it="Range Operativo">Operating Range</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-value">100N</span>
+                                <span class="spec-label" data-en="Actuation Force" data-it="Forza di Attuazione">Actuation Force</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-value">>10,000</span>
+                                <span class="spec-label" data-en="Fatigue Cycles" data-it="Cicli di Fatica">Fatigue Cycles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech 2 - Recycling -->
+                <div class="tech-row tech-row-reverse" data-aos="fade-left">
+                    <div class="tech-visual">
+                        <div class="tech-placeholder">
+                            <svg viewBox="0 0 400 400" class="tech-illustration">
+                                <defs>
+                                    <linearGradient id="recycleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:var(--primary-green);stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:var(--accent-orange);stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M200 100 L260 180 L240 240 L160 240 L140 180 Z" stroke="url(#recycleGrad)" stroke-width="3" fill="none"/>
+                                <circle cx="200" cy="200" r="80" stroke="url(#recycleGrad)" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tech-content">
+                        <span class="tech-label">02</span>
+                        <h3 class="tech-title" data-en="Sustainable Composite Recycling" data-it="Riciclo Avanzato di Compositi">Sustainable Composite Recycling</h3>
+                        <h4 class="tech-subtitle" data-en="Circular Economy Solutions" data-it="Soluzioni per l'Economia Circolare">Circular Economy Solutions</h4>
+                        <p class="tech-description"
+                           data-en="Innovative pyrolysis and chemical processes for recovering valuable materials from aerospace composites and printed circuit boards. Closing the loop in advanced manufacturing."
+                           data-it="Processi innovativi di pirolisi e trattamenti chimici per recuperare materiali preziosi da compositi aerospaziali e circuiti stampati. Chiudere il ciclo nella produzione avanzata.">
+                            Innovative pyrolysis and chemical processes for recovering valuable materials from aerospace composites and printed circuit boards. Closing the loop in advanced manufacturing.
+                        </p>
+                        <ul class="tech-features">
+                            <li data-en="Carbon fiber recovery (>95% quality retention)" data-it="Recupero fibre di carbonio (>95% qualità)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Carbon fiber recovery (>95% quality retention)</span>
+                            </li>
+                            <li data-en="Precious metal extraction from PCBs" data-it="Estrazione metalli preziosi da PCB">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Precious metal extraction from PCBs</span>
+                            </li>
+                            <li data-en="Energy-efficient processes" data-it="Processi energeticamente efficienti">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Energy-efficient processes</span>
+                            </li>
+                            <li data-en="Zero-waste approach" data-it="Approccio zero rifiuti">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                <span>Zero-waste approach</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title" data-en="Our Services" data-it="I Nostri Servizi">Our Services</h2>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card" data-aos="zoom-in">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="32" cy="32" r="12" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Research & Development" data-it="Ricerca & Sviluppo">Research & Development</h3>
+                        <p data-en="Custom material development, characterization, and testing. From concept to prototype, we deliver innovative solutions tailored to your needs."
+                           data-it="Sviluppo materiali custom, caratterizzazione e testing. Dal concept al prototipo, forniamo soluzioni innovative su misura.">
+                            Custom material development, characterization, and testing. From concept to prototype, we deliver innovative solutions tailored to your needs.
+                        </p>
+                        <div class="service-back">
+                            <h4 data-en="Our Approach" data-it="Il Nostro Approccio">Our Approach</h4>
+                            <ul>
+                                <li data-en="Material formulation optimization" data-it="Ottimizzazione formulazione materiali">Material formulation optimization</li>
+                                <li data-en="Mechanical & thermal testing" data-it="Test meccanici e termici">Mechanical & thermal testing</li>
+                                <li data-en="Prototype manufacturing" data-it="Produzione prototipi">Prototype manufacturing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M32 16 L48 32 L32 48 L16 32 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="32" cy="32" r="6" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Consulting" data-it="Consulenza">Consulting</h3>
+                        <p data-en="Expert guidance on material selection, process optimization, and technology transfer. Leverage our academic and industrial expertise."
+                           data-it="Consulenza esperta su selezione materiali, ottimizzazione processi e trasferimento tecnologico. Sfrutta la nostra esperienza accademica e industriale.">
+                            Expert guidance on material selection, process optimization, and technology transfer. Leverage our academic and industrial expertise.
+                        </p>
+                        <div class="service-back">
+                            <h4 data-en="Expertise Areas" data-it="Aree di Competenza">Expertise Areas</h4>
+                            <ul>
+                                <li data-en="Material selection strategy" data-it="Strategia selezione materiali">Material selection strategy</li>
+                                <li data-en="Process feasibility studies" data-it="Studi di fattibilità processi">Process feasibility studies</li>
+                                <li data-en="Technical due diligence" data-it="Due diligence tecnica">Technical due diligence</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 64 64">
+                                <rect x="16" y="20" width="32" height="28" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="24" cy="32" r="4" fill="currentColor"/>
+                                <circle cx="40" cy="32" r="4" fill="currentColor"/>
+                                <line x1="24" y1="32" x2="40" y2="32" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Project Partnerships" data-it="Partnership di Progetto">Project Partnerships</h3>
+                        <p data-en="Collaborative participation in EU, ESA, ASI funded projects. Join us in shaping the future of aerospace and sustainability."
+                           data-it="Partecipazione collaborativa a progetti finanziati EU, ESA, ASI. Unisciti a noi nel plasmare il futuro dell'aerospazio e della sostenibilità.">
+                            Collaborative participation in EU, ESA, ASI funded projects. Join us in shaping the future of aerospace and sustainability.
+                        </p>
+                        <div class="service-back">
+                            <h4 data-en="Funding Programs" data-it="Programmi di Finanziamento">Funding Programs</h4>
+                            <ul>
+                                <li data-en="Horizon Europe projects" data-it="Progetti Horizon Europe">Horizon Europe projects</li>
+                                <li data-en="ESA technology programs" data-it="Programmi tecnologici ESA">ESA technology programs</li>
+                                <li data-en="National aerospace initiatives" data-it="Iniziative aerospaziali nazionali">National aerospace initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 64 64">
+                                <rect x="20" y="16" width="24" height="32" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <line x1="26" y1="24" x2="38" y2="24" stroke="currentColor" stroke-width="2"/>
+                                <line x1="26" y1="32" x2="38" y2="32" stroke="currentColor" stroke-width="2"/>
+                                <line x1="26" y1="40" x2="34" y2="40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="IP Management" data-it="Gestione IP">IP Management</h3>
+                        <p data-en="Patent portfolio development and licensing opportunities. Transform research into commercial value."
+                           data-it="Sviluppo portfolio brevetti e opportunità di licensing. Trasforma la ricerca in valore commerciale.">
+                            Patent portfolio development and licensing opportunities. Transform research into commercial value.
+                        </p>
+                        <div class="service-back">
+                            <h4 data-en="IP Services" data-it="Servizi IP">IP Services</h4>
+                            <ul>
+                                <li data-en="Patent strategy development" data-it="Sviluppo strategia brevettuale">Patent strategy development</li>
+                                <li data-en="Technology licensing" data-it="Licensing tecnologico">Technology licensing</li>
+                                <li data-en="IP portfolio management" data-it="Gestione portfolio IP">IP portfolio management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team section" id="team">
+            <div class="container">
+                <h2 class="section-title" data-en="Our Team" data-it="Il Nostro Team">Our Team</h2>
+
+                <div class="team-carousel" id="teamCarousel">
+                    <div class="team-track">
+                        <!-- Team Member 1 -->
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 200 200" class="avatar-placeholder">
+                                    <defs>
+                                        <linearGradient id="avatarGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#1E88E5;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#00C853;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="url(#avatarGrad1)"/>
+                                    <circle cx="100" cy="80" r="30" fill="rgba(255,255,255,0.3)"/>
+                                    <ellipse cx="100" cy="140" rx="40" ry="50" fill="rgba(255,255,255,0.3)"/>
+                                </svg>
+                            </div>
+                            <h3>Nicola Gallo</h3>
+                            <h4 data-en="CEO & Research Director" data-it="CEO & Direttore Ricerca">CEO & Research Director</h4>
+                            <p data-en="Leading STRAIN's vision in advanced materials research with expertise in shape memory polymers and aerospace applications."
+                               data-it="Guida la visione di STRAIN nella ricerca sui materiali avanzati con competenza in polimeri a memoria di forma e applicazioni aerospaziali.">
+                                Leading STRAIN's vision in advanced materials research with expertise in shape memory polymers and aerospace applications.
+                            </p>
+                            <a href="#" class="linkedin-link" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Team Member 2 -->
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 200 200" class="avatar-placeholder">
+                                    <defs>
+                                        <linearGradient id="avatarGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00C853;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#FF6F00;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="url(#avatarGrad2)"/>
+                                    <circle cx="100" cy="80" r="30" fill="rgba(255,255,255,0.3)"/>
+                                    <ellipse cx="100" cy="140" rx="40" ry="50" fill="rgba(255,255,255,0.3)"/>
+                                </svg>
+                            </div>
+                            <h3>Fabrizio Quadrini</h3>
+                            <h4 data-en="Scientific Advisor" data-it="Consulente Scientifico">Scientific Advisor</h4>
+                            <p data-en="Professor at University of Rome Tor Vergata, bringing decades of expertise in polymer composites and manufacturing technologies."
+                               data-it="Professore all'Università di Roma Tor Vergata, con decenni di esperienza in compositi polimerici e tecnologie di produzione.">
+                                Professor at University of Rome Tor Vergata, bringing decades of expertise in polymer composites and manufacturing technologies.
+                            </p>
+                            <a href="#" class="linkedin-link" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Team Member 3 -->
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 200 200" class="avatar-placeholder">
+                                    <defs>
+                                        <linearGradient id="avatarGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FF6F00;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#1E88E5;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="url(#avatarGrad3)"/>
+                                    <circle cx="100" cy="80" r="30" fill="rgba(255,255,255,0.3)"/>
+                                    <ellipse cx="100" cy="140" rx="40" ry="50" fill="rgba(255,255,255,0.3)"/>
+                                </svg>
+                            </div>
+                            <h3>Loredana Santo</h3>
+                            <h4 data-en="Materials Science Lead" data-it="Responsabile Scienza dei Materiali">Materials Science Lead</h4>
+                            <p data-en="Expert in advanced material characterization and testing methodologies with focus on aerospace applications."
+                               data-it="Esperta in caratterizzazione di materiali avanzati e metodologie di testing con focus su applicazioni aerospaziali.">
+                                Expert in advanced material characterization and testing methodologies with focus on aerospace applications.
+                            </p>
+                            <a href="#" class="linkedin-link" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Team Member 4 -->
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 200 200" class="avatar-placeholder">
+                                    <defs>
+                                        <linearGradient id="avatarGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#0A1F44;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#00C853;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="url(#avatarGrad4)"/>
+                                    <circle cx="100" cy="80" r="30" fill="rgba(255,255,255,0.3)"/>
+                                    <ellipse cx="100" cy="140" rx="40" ry="50" fill="rgba(255,255,255,0.3)"/>
+                                </svg>
+                            </div>
+                            <h3>Fabiola Massa</h3>
+                            <h4 data-en="Recycling Technology Expert" data-it="Esperta Tecnologie di Riciclo">Recycling Technology Expert</h4>
+                            <p data-en="Specialized in sustainable recycling processes for composite materials and circular economy implementations."
+                               data-it="Specializzata in processi di riciclo sostenibile per materiali compositi e implementazioni di economia circolare.">
+                                Specialized in sustainable recycling processes for composite materials and circular economy implementations.
+                            </p>
+                            <a href="#" class="linkedin-link" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Team Member 5 -->
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <svg viewBox="0 0 200 200" class="avatar-placeholder">
+                                    <defs>
+                                        <linearGradient id="avatarGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#1E88E5;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#FF6F00;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="url(#avatarGrad5)"/>
+                                    <circle cx="100" cy="80" r="30" fill="rgba(255,255,255,0.3)"/>
+                                    <ellipse cx="100" cy="140" rx="40" ry="50" fill="rgba(255,255,255,0.3)"/>
+                                </svg>
+                            </div>
+                            <h3>Silvia Baiocco</h3>
+                            <h4 data-en="Aerospace Applications Engineer" data-it="Ingegnere Applicazioni Aerospaziali">Aerospace Applications Engineer</h4>
+                            <p data-en="Focused on integrating advanced materials into space mechanisms and satellite deployment systems."
+                               data-it="Specializzata nell'integrazione di materiali avanzati in meccanismi spaziali e sistemi di dispiegamento satellitare.">
+                                Focused on integrating advanced materials into space mechanisms and satellite deployment systems.
+                            </p>
+                            <a href="#" class="linkedin-link" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-en="Get In Touch" data-it="Contattaci">Get In Touch</h2>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container" data-aos="fade-right">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name" data-en="Your Name" data-it="Nome">Your Name</label>
+                                <span class="form-bar"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email" data-en="Email Address" data-it="Indirizzo Email">Email Address</label>
+                                <span class="form-bar"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="company" name="company">
+                                <label for="company" data-en="Company (optional)" data-it="Azienda (opzionale)">Company (optional)</label>
+                                <span class="form-bar"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message" data-en="Your Message" data-it="Il Tuo Messaggio">Your Message</label>
+                                <span class="form-bar"></span>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">
+                                    <span data-en="I agree to the" data-it="Accetto la">I agree to the</span>
+                                    <a href="privacy-policy.html" target="_blank" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text" data-en="Send Message" data-it="Invia Messaggio">Send Message</span>
+                                <span class="btn-loading">
+                                    <svg viewBox="0 0 50 50" class="spinner">
+                                        <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="4"></circle>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info" data-aos="fade-left">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Location" data-it="Sede">Location</h3>
+                            <p>Roma, Italia</p>
+                            <p class="info-detail" data-en="University of Rome Tor Vergata - STEP" data-it="Università di Roma Tor Vergata - STEP">University of Rome Tor Vergata - STEP</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Email" data-it="Email">Email</h3>
+                            <a href="mailto:info@strain.it">info@strain.it</a>
+                            <p class="info-detail">PEC: <a href="mailto:pec@strain.it">pec@strain.it</a></p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <polyline points="2 17 12 22 22 17"/>
+                                    <polyline points="2 12 12 17 22 12"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Spin-off" data-it="Spin-off">Spin-off</h3>
+                            <p data-en="University of Rome Tor Vergata" data-it="Università di Roma Tor Vergata">University of Rome Tor Vergata</p>
+                            <p class="info-status" data-en="Company in incorporation" data-it="Società in costituzione">Company in incorporation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1 - About -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="20" class="logo-circle"/>
+                            <path d="M15,25 L25,15 L35,25 L25,35 Z" class="logo-diamond"/>
+                        </svg>
+                        <span>STRAIN S.r.l.</span>
+                    </div>
+                    <p class="footer-tagline" data-en="Advanced Materials for Space & Sustainability" data-it="Materiali Avanzati per Spazio e Sostenibilità">
+                        Advanced Materials for Space & Sustainability
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Quick Links -->
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-it="Link Rapidi">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#technologies" data-en="Technologies" data-it="Tecnologie">Technologies</a></li>
+                        <li><a href="#services" data-en="Services" data-it="Servizi">Services</a></li>
+                        <li><a href="#team" data-en="Team" data-it="Team">Team</a></li>
+                        <li><a href="#contact" data-en="Contact" data-it="Contatti">Contact</a></li>
+                        <li><a href="privacy-policy.html" data-en="Privacy Policy" data-it="Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="legal-notes.html" data-en="Legal Notes" data-it="Note Legali">Legal Notes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Legal -->
+                <div class="footer-col">
+                    <h4 data-en="Legal Information" data-it="Informazioni Legali">Legal Information</h4>
+                    <p>STRAIN S.r.l.</p>
+                    <p data-en="Spin-off University of Rome Tor Vergata" data-it="Spin-off Università di Roma Tor Vergata">Spin-off University of Rome Tor Vergata</p>
+                    <p>Roma, Italia</p>
+                    <p class="company-status" data-en="Company in incorporation process" data-it="Società in fase di costituzione">Company in incorporation process</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 STRAIN S.r.l. | <span data-en="All rights reserved" data-it="Tutti i diritti riservati">All rights reserved</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-bg.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
