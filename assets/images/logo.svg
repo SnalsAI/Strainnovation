@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="letterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Upper arrow (green to teal) -->
+  <path d="M 160 70
+           A 70 70 0 0 0 40 70"
+        fill="none"
+        stroke="url(#arrowGradient)"
+        stroke-width="16"
+        stroke-linecap="round"/>
+
+  <!-- Upper arrowhead -->
+  <polygon points="155,50 175,70 155,70" fill="#00BCD4"/>
+
+  <!-- Lower arrow (teal to blue) -->
+  <path d="M 40 130
+           A 70 70 0 0 0 160 130"
+        fill="none"
+        stroke="url(#arrowGradient)"
+        stroke-width="16"
+        stroke-linecap="round"/>
+
+  <!-- Lower arrowhead -->
+  <polygon points="45,150 25,130 45,130" fill="#2196F3"/>
+
+  <!-- Stylized E letter -->
+  <text x="100" y="125"
+        font-family="Georgia, serif"
+        font-size="80"
+        font-weight="400"
+        font-style="italic"
+        fill="url(#letterGradient)"
+        text-anchor="middle">E</text>
+</svg>
