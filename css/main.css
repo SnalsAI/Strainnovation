@@ -479,8 +479,6 @@ a:hover {
 
 .hero-title {
     margin-bottom: var(--spacing-md);
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
 }
 
 .hero-title-line {
@@ -491,8 +489,6 @@ a:hover {
     font-size: clamp(1rem, 2vw, 1.25rem);
     margin-bottom: var(--spacing-lg);
     color: var(--text-secondary);
-    opacity: 0;
-    animation: fadeInUp 1s ease 0.3s forwards;
 }
 
 .hero-cta {
@@ -500,8 +496,6 @@ a:hover {
     gap: var(--spacing-md);
     justify-content: center;
     flex-wrap: wrap;
-    opacity: 0;
-    animation: fadeInUp 1s ease 0.6s forwards;
 }
 
 /* Scroll Indicator */
@@ -514,8 +508,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-xs);
-    opacity: 0;
-    animation: fadeInUp 1s ease 0.9s forwards;
 }
 
 .mouse {
