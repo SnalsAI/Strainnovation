@@ -1,5 +1,5 @@
 /**
- * STRAIN S.r.l. - GSAP Animations
+ * STRAINnovation S.r.l. - GSAP Animations
  * Advanced Scroll-Triggered Animations
  */
 

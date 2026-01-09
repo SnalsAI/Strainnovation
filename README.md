@@ -1,10 +1,10 @@
-# STRAIN S.r.l. - Official Website
+# STRAINnovation S.r.l. - Official Website
 
-![STRAIN S.r.l.](https://img.shields.io/badge/STRAIN-Aerospace%20Materials-1E88E5)
+![STRAINnovation S.r.l.](https://img.shields.io/badge/STRAIN-Aerospace%20Materials-1E88E5)
 ![Status](https://img.shields.io/badge/status-production--ready-00C853)
 ![License](https://img.shields.io/badge/license-proprietary-red)
 
-Advanced Materials for Space & Sustainability - Professional website for STRAIN S.r.l., a spin-off of the University of Rome Tor Vergata.
+Advanced Materials for Space & Sustainability - Professional website for STRAINnovation S.r.l., a spin-off of the University of Rome Tor Vergata.
 
 ## 🚀 Features
 
@@ -392,9 +392,9 @@ For technical support or questions:
 
 ## 📄 License
 
-© 2024 STRAIN S.r.l. All rights reserved.
+© 2024 STRAINnovation S.r.l. All rights reserved.
 
-This website and its contents are proprietary to STRAIN S.r.l. Unauthorized reproduction or distribution is prohibited.
+This website and its contents are proprietary to STRAINnovation S.r.l. Unauthorized reproduction or distribution is prohibited.
 
 ## 🙏 Credits
 
@@ -404,7 +404,7 @@ This website and its contents are proprietary to STRAIN S.r.l. Unauthorized repr
 - Google Fonts
 
 ### Design
-- Designed and developed for STRAIN S.r.l.
+- Designed and developed for STRAINnovation S.r.l.
 - Spin-off of Università di Roma Tor Vergata
 
 ## 🔄 Version History
@@ -423,4 +423,4 @@ This website and its contents are proprietary to STRAIN S.r.l. Unauthorized repr
 
 **Built with ❤️ for Advanced Aerospace Materials and Sustainability**
 
-🚀 STRAIN S.r.l. - Shaping the Future of Space Technology
+🚀 STRAINnovation S.r.l. - Shaping the Future of Space Technology

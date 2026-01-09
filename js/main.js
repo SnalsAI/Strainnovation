@@ -1,5 +1,5 @@
 /**
- * STRAIN S.r.l. - Main JavaScript
+ * STRAINnovation S.r.l. - Main JavaScript
  * Language Switching, Theme Toggle, Form Handling & Interactions
  */
 
@@ -500,7 +500,7 @@
     // CONSOLE EASTER EGG
     // ================================
     console.log(
-        '%c🚀 STRAIN S.r.l. - Advanced Materials for Space & Sustainability',
+        '%c🚀 STRAINnovation S.r.l. - Advanced Materials for Space & Sustainability',
         'font-size: 16px; font-weight: bold; color: #1E88E5;'
     );
     console.log(
