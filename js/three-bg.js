@@ -1,5 +1,5 @@
 /**
- * Strainnovation S.r.l. - Three.js 3D Background
+ * STRAINnovation S.r.l. - Three.js 3D Background
  * Particle Network Animation for Hero Section
  */
 
